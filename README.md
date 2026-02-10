@@ -37,5 +37,5 @@ Measured performance achieves an average processing time of approximately **2.1 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/ISL-PureCV-Recognizer.git
-cd ISL-PureCV-Recognizer
+git clone https://github.com/<your-username>/ISL_Recognizer.git
+cd ISL_Recognizer
