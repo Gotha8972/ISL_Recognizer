@@ -8,18 +8,18 @@ from cmain import PureCV_ISLRecognizer
 # --- Page Configuration ---
 st.set_page_config(
     page_title="High-Speed ISL Recognition",
-    page_icon="🤟",
+    page_icon="",
     layout="wide"
 )
 
-st.title("🤟 Real-Time ISL Recognition (Optimized 30+ FPS)")
+st.title(" Real-Time ISL Recognition (Optimized 30+ FPS)")
 st.markdown("""
 **Performance Mode:** Using `video_frame_callback` and `av` frames to minimize latency. 
 No artificial frame-rate capping.
 """)
 
 # --- Sidebar Controls ---
-st.sidebar.header("⚙️ Configuration")
+st.sidebar.header("Configuration")
 
 # Path to your gesture templates
 template_path = st.sidebar.text_input(
@@ -107,13 +107,13 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("📝 Current Sentence")
+    st.subheader("Current Sentence")
     # Display current word progress
     current = "".join(recognizer.current_word)
     st.write(f"### `{current if current else '[Waiting for sign...]'}`")
 
 with col2:
-    st.subheader("📚 Word History")
+    st.subheader("Word History")
     if recognizer.words_history:
         for word in reversed(recognizer.words_history[-5:]):
             st.write(f"- {word}")
